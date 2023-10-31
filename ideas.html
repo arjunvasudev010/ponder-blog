@@ -10,14 +10,16 @@
     <body>
         <header>
             <div class="logo-head"><img src="\\wsl.localhost\Ubuntu\home\arjun\aa-projects\blog\ponder-blog\ponder -logos\ponder -logos_black.png"></div>
-            <p class="welcome">Welcome to Ponder-visitor details</p2>
+            <div class="welcome">
+                <p class="note">Welcome to Ponder</p2>
+            </div>
             <div class="nav-bar">
                 <nav class="top-nav">
                     <ul>
                         <li ><a href="index.html">Home </a></li>
-                        <li ><a href="visitor.html">Visitor Details </a></li>
-                        <li ><a href="#stories">Stories </a></li>
-                        <li ><a href="#contact">Contact </a></li>
+                        <li ><a href="ideas.html">Ideas </a></li>
+                        <li ><a href="stories.html">Stories </a></li>
+                        <li ><a href="contact.html">Contact </a></li>
                     </ul>
                 </nav>
             </div>
@@ -25,10 +27,10 @@
         </header>
         <main>
             <div>
-                <h1 class="visitors-head">Visitors Details</h1>
-                <form action="process-form.php" method="post">
-                    <fieldset>
-                        <legend>Contact Information</legend>
+                <h1 class="visitors-head">Your Details</h1>
+                <form action="process-form.php" method="post" >
+                    <fieldset class="ur-info">
+                        <legend>Your Information</legend>
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
                         <label for="email">Email:</label>
@@ -36,16 +38,37 @@
                         <label for="age">Age</label>
                         <input type="number" id="age " name="age" required>
                     </fieldset>
+                    <span class="spacer"></span>
+                    <fieldset>
+                        <legend>
+                            What geners would you like to read and watch
+                        </legend>
+                        <input type="checkbox" id="all" name="all">All-geners
+                        <input type="checkbox" id="action" name="action">Action
+                        <input type="checkbox" id="adventure" name="adventure">Adventure
+                        <input type="checkbox" id="comedy" name="comedy">Comedy
+                        <input type="checkbox" id="crime" name="crime">Crime
+                        <input type="checkbox" id="Drama" name="Drama">Drama
+                        <input type="checkbox" id="fantasy" name="fantasy">Fantasy
+                        <input type="checkbox" id="romance" name="romance">Romance
+                        <input type="checkbox" id="thriller" name="thriller">Thriller
+                    </fieldset>
+                    <span class="spacer"></span>
 
                     <fieldset>
-                        <legend>Your Message</legend>
+                        <legend>Your Ideas</legend>
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
                     </fieldset>
+                    <span class="spacer"></span>
 
                     <button type="submit">Submit</button>
                 </form>
             </div>
         </main>
+        <span class="spacer"></span>
     </body>
+    <footer>
+        <p>&copy; 2023 Ponder</p>
+    </footer>
 </html>
